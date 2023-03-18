@@ -1,9 +1,8 @@
 from googfit import GoogFit
 from datetime import datetime, timedelta
 
-# Initialize wrapper class with timezone
-token = 'YOUR_ACCESS_TOKEN'
-gf = GoogFit(token, timezone='US/Pacific')
+# Initialize wrapper class with timezone, refresh_token from refresh_token.json
+gf = GoogFit(timezone='US/Pacific')
 day = datetime.today()
 
 # Convert datetime to epoch nanoseconds
